@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            JavaScript | Pass a function as parameter 
+        </title> 
+    </head> 
+      
+    <body style = "text-align:center;"> 
+          
+        <h1 style = "color:green;" > 
+            JavaScript Assignment 
+        </h1> 
+          
+        <p> 
+            Passing function as arguments. 
+        </p> 
+          
+        <!-- Function call after clicking the button -->
+        <button onclick = "outer(inner)"> 
+            Click Here 
+        </button>     
+          
+        <script> 
+            function inner(value){
+                return 'hello User!';
+            }
+            function outer(func){
+                alert(func());
+            }
+        </script> 
+    </body> 
+</html>
